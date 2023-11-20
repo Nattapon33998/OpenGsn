@@ -1,0 +1,40 @@
+{
+  "name": "gsn-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deployMyContract.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deployMyContract.js --network sepolia",
+    "deploy:loaffinity": "hardhat run scripts/deploy.js --network loaffinity"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.1",
+    "@opengsn/cli": "^3.0.0-beta.6",
+    "@opengsn/dev": "^3.0.0-beta.6",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.2.0",
+    "chain": "^0.4.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@opengsn/contracts": "^3.0.0-beta.6",
+    "@opengsn/provider": "^3.0.0-beta.6",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.0.3",
+    "hardhat-laika": "^0.1.1"
+  }
+}
